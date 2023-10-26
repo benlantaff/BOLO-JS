@@ -1,0 +1,21 @@
+body {
+  background-color: #1e1e1e;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.draggable {
+  -webkit-app-region: drag;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 8px;
+  /* border-top: solid #1379cc; */
+  color: #1379cc;
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+}

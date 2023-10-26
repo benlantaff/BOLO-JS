@@ -1,0 +1,54 @@
+{
+  "name": "bolo-js",
+  "version": "1.0.0",
+  "description": "BoloJS game w/ self updates.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -w",
+    "build-mac": "sudo electron-builder -m",
+    "release-windows": "electron-builder -w -p onTagOrDraft",
+    "release-mac": "sudo electron-builder -m -p onTagOrDraft"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benlantaff/BOLO-JS.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Electron.js"
+  ],
+  "build": {
+    "appId": "benlantaff.github.com",
+    "copyright": "Copyright Ben Lantaff",
+    "publish": {
+      "provider": "github",
+      "owner": "<REPLACE WITH YOUR GIT USERNAME>",
+      "token": "<REPLACE WITH YOUR GIT TOKEN>"
+    },
+    "mac": {
+      "type": "distribution",
+      "hardenedRuntime": true,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "gatekeeperAssess": false,
+      "category": "public.app-category.developer-tools",
+      "extendInfo": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    }
+  },
+  "author": "Ben Lantaff",
+  "license": "GNU GENERAL PUBLIC LICENSE v3.0",
+  "bugs": {
+    "url": "https://github.com/benlantaff/BOLO-JS/issues"
+  },
+  "homepage": "https://github.com/benlantaff/BOLO-JS#readme",
+  "dependencies": {
+    "electron": "^27.0.2",
+    "electron-log": "^5.0.0",
+    "electron-updater": "^6.1.4"
+  }
+}
