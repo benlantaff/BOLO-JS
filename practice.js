@@ -3,5 +3,9 @@ const os = require("node:os");
 const { ipcRenderer } = require("electron");
 
 window.addEventListener("DOMContentLoaded", () => {
-  // STUB
+  const exitButton = document.getElementById("exit");
+
+  exitButton.addEventListener("click", (e) => {
+    ipcRenderer.send("exit");
+  });
 });

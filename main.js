@@ -90,17 +90,16 @@ ipcMain.on("practice", async (e, data) => {
   mainWindow.close();
 });
 
+ipcMain.on("exit", async (e, data) => {
+  app.quit();
+});
+
 /* When Electron `app` is ready, create the window. */
 app.on("ready", createWindows);
 
 /* Quit when all windows are closed */
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
-});
-
-// IPC Messaging - Exit button
-ipcMain.on("exit", async (e, data) => {
-  app.quit();
 });
 
 /* When app icon is clicked and app is running, (macOS) recreate the BrowserWindow */
