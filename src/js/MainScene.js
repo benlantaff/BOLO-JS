@@ -16,8 +16,8 @@ export default class MainScene extends Phaser.Scene {
     this.map = map;
     const tileset = map.addTilesetImage("bolosprites64", "tiles", 64, 64, 0, 0);
 
-    const bottom = map.createLayer("Bottom", tileset, 0, 0);
-    const top = map.createLayer("Top", tileset, 0, 0);
+    const bottom = map.createLayer("Bottom", tileset, 0, 0).setScale(1);
+    const top = map.createLayer("Top", tileset, 0, 0).setScale(1);
 
     top.setCollisionByProperty({ collides: true });
     bottom.setCollisionByProperty({ collides: true });
