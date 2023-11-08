@@ -5,7 +5,7 @@ export default class Player extends Phaser.Physics.Matter.Sprite {
     this.scene.add.existing(this);
 
     const { Body, Bodies } = Phaser.Physics.Matter.Matter;
-    let playerCollider = Bodies.circle(this.x, this.y, 24, {
+    let playerCollider = Bodies.circle(this.x, this.y, 40, {
       isSensor: false,
       label: "playerCollider",
     });
