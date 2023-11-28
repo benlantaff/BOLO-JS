@@ -1,4 +1,5 @@
 import Player from "./Player.js";
+import { debugDraw } from "./Utils.js";
 
 export default class MainScene extends Phaser.Scene {
   constructor() {
@@ -21,6 +22,13 @@ export default class MainScene extends Phaser.Scene {
 
     top.setCollisionByProperty({ collides: true });
     bottom.setCollisionByProperty({ collides: true });
+
+    // If debug is enabled, draw the collision map layers
+    if(this.game.config.physics.matter.debug) {
+      debugDraw(top, this);
+      debugDraw(bottom, this);
+    }
+
     this.matter.world.convertTilemapLayer(top);
     this.matter.world.convertTilemapLayer(bottom);
 
