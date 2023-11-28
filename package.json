@@ -1,6 +1,6 @@
 {
   "name": "bolo-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BoloJS game w/ self updates.",
   "main": "main.js",
   "scripts": {
@@ -23,8 +23,8 @@
     "copyright": "Copyright Ben Lantaff",
     "publish": {
       "provider": "github",
-      "owner": "<REPLACE WITH YOUR GIT USERNAME>",
-      "token": "<REPLACE WITH YOUR GIT TOKEN>"
+      "owner": "benlantaff",
+      "token": ""
     },
     "mac": {
       "type": "distribution",
@@ -47,8 +47,10 @@
   },
   "homepage": "https://github.com/benlantaff/BOLO-JS#readme",
   "dependencies": {
-    "electron": "^27.0.2",
     "electron-log": "^5.0.0",
     "electron-updater": "^6.1.4"
+  },
+  "devDependencies": {
+    "electron": "^27.0.2"
   }
 }

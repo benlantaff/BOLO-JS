@@ -21,7 +21,7 @@ function createWindows() {
     resizable: false,
     webSecurity: false,
     show: false,
-    icon: __dirname + "/icon.png",
+    icon: __dirname + "/src/assets/images/red_pill.png",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -36,7 +36,7 @@ function createWindows() {
     frame: false,
     resizable: false,
     show: false,
-    icon: __dirname + "/icon.png",
+    icon: __dirname + "/src/assets/images/red_pill.png",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -52,7 +52,7 @@ function createWindows() {
     show: false,
     webSecurity: false,
     frame: false,
-    icon: __dirname + "/icon.png",
+    icon: __dirname + "/src/assets/images/red_pill.png",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
