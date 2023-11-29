@@ -53,8 +53,8 @@
     "phaser": "^3.70.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
     "electron-updater": "^6.1.4",
     "electron": "^27.0.2"
-  },
+  }
 }
