@@ -24,7 +24,7 @@ export default class MainScene extends Phaser.Scene {
     bottom.setCollisionByProperty({ collides: true });
 
     // If debug is enabled, draw the collision map layers
-    if(this.game.config.physics.matter.debug) {
+    if (this.game.config.physics.matter.debug) {
       debugDraw(top, this);
       debugDraw(bottom, this);
     }
